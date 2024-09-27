@@ -13,6 +13,6 @@ for i in range(n):
     x3= int(input())
     print("Введите 4-ую оценку:")
     x4= int(input())
-    if x1>3 or x2>3 or x3>3 or x4>3:
+    if x1>3 and x2>3 and x3>3 and x4>3:
         k+=1
 print(k)
