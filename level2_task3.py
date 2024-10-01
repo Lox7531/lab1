@@ -11,4 +11,5 @@ while s<=p:
     i+=1
     n+=1
     s+=(a+n*h)
+i=i-1
 print(i)
