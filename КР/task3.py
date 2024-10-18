@@ -1,20 +1,23 @@
 """
-Максимальный элемент массива среди элементов с четными индексами заменить значением его индекса.
+13.Из массива удалить повторяющиеся элементы.
 """
 import array
 print("Введите количество элементов массива")
-maxi=-1
 n=int(input())
 ara=[]
+lst=[]
 for i in range(n):
     print("Введите элемент")
-    t=int(input())
+    t=(input())
     ara.append(t)
 print("Массив до изменения:",ara)
-for i in range(len(ara)):
-    if i%2==0:
-        maxi=max(ara[i],maxi)
-for i in range(len(ara)):
-    if ara[i]==maxi:
-        ara[i]=i
-print("Массив принимает вид:",ara)
+t=len(ara)
+lst.append(ara[0])
+for i in range(t):
+    for j in range(i+1,t):
+        if ara[i]!=ara[j]:
+            lst.append(ara[j])
+            break
+            print(lst)
+ara=lst
+print(ara)
