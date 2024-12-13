@@ -5,12 +5,17 @@
 Для замены столбцов использовать метод.
 '''
 import numpy as np
+#пример квадратной матрицы
 A =np.array([[60, 2, 1000],
               [4, 100, 6],
               [7, 8, 0]]
             )
+#на главной диагонали max элемент '100', в первой строчке '1000'
 print("Матрица до:")
-print(A)
+for i in range(len(A)):
+    for j in range(len(A[i])):  
+        print(A[i][j], end=' ')
+    print()
 def swap(matrix):
     max1=-100
     # Нахождение индекса максимального элемента на главной диагонали
@@ -29,4 +34,8 @@ def swap(matrix):
         
     return matrix
 print("Матрица после того, как поменяли столбцы местами:")
-print(swap(A))
+A=swap(A)
+for i in range(len(A)):
+    for j in range(len(A[i])):  
+        print(A[i][j], end=' ')
+    print()
