@@ -29,7 +29,7 @@ def print_failing_students(students):
     print("Неуспевающие студенты (оценка 2):")
     for student in failing_students:
         print(student)
-
+#пример студентов
 students = [
     Student("Иванов И.И.", 3, 5),
     Student("Петров П.П.", 2, 2),
