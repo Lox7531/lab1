@@ -57,7 +57,6 @@ class SurveyResponse:
         for item, count, percentage in results:
             print(f"{item:<30} {count:<10} {percentage:.2f}")
 
-# Пример использования
 if __name__ == "__main__":
     survey = SurveyResponse()
 
