@@ -25,10 +25,7 @@ for i in range(len(B)):
             print(B[i][j], end=' ')
         print()
 def fun(M):
-    t=0
-    r=0
     lst=[]
-    maxi=-10000
     for i in range(len(M)):
         for j in range(len(M[0])):
             lst.append(M[i][j])
