@@ -1,3 +1,6 @@
+"""
+y=ax**2+b*x+c
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 '''
