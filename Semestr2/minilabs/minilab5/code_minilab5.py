@@ -1,3 +1,9 @@
+"""
+import random
+a = random.sample(range(1, 12), 3)
+print(a)
+11 6 8 
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import AgglomerativeClustering, DBSCAN, HDBSCAN, estimate_bandwidth, MeanShift
